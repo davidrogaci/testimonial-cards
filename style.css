@@ -1,29 +1,58 @@
+/* ===== FONT ===== */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* ===== RESET & BASE STYLES ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto500", sans-serif;
 }
 
 img {
-  width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding: 20px;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 14px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.card {
+.card-daniel {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
-  color: #ffffff;
-  border-radius: 6px;
+  background-color: #dbdbdb;
+  color: #161515;
+}
+
+.card-jane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdbdb;
+  color: #161515;
+}
+
+.card-john {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdbdb;
+  color: #161515;
+}
+
+.card-emma {
+  display: flex;
+  align-items: center;
+  background-color: #dbdbdb;
+  color: #161515;
 }
